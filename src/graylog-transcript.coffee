@@ -26,7 +26,7 @@ module.exports = (robot) ->
 
   logger = new gl.graylog
     servers: ['host': host, port: port ]
-    facility: 'facility'
+    facility: facility
     bufferSize: chunkSize
 
   robot.hear //, (msg) ->
