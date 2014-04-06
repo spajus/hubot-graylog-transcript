@@ -4,19 +4,19 @@ Logs all chatroom conversations to Graylog.
 
 ## Installation
 
-1. Install NPM package:
+Install NPM package:
 
 ```
 npm install --save hubot-graylog-transcript
 ```
 
-2. Add `hubot-graylog-transcript` to `external-scripts.json`:
+Add `hubot-graylog-transcript` to `external-scripts.json`:
 
 ```
 [<...>, "hubot-graylog-transcript"]
 ```
 
-3. Configure Hubot via environmental variables:
+Configure Hubot via environmental variables:
 
 ```
 # Required
