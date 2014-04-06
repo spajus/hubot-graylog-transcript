@@ -22,6 +22,8 @@ module.exports = (robot) ->
   facility = process.env.HUBOT_GRAYLOG_TRANSCRIPT_FACILITY || 'chat'
   chunkSize =  process.env.HUBOT_GRAYLOG_TRANSCRIPT_CHUNK_SIZE || '1400'
 
+  robot.logger.warning "HUBOT_GRAYLOG_TRANSCRIPT_HOST not provided!"
+
   logger = new gl.graylog
     servers: ['host': host, port: port ]
     facility: 'facility'
