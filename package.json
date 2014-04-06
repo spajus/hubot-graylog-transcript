@@ -1,7 +1,7 @@
 {
   "name": "hubot-graylog-transcript",
   "version": "0.0.1",
-  "description": "Log all chat messages to Graylog"
+  "description": "Log all chat messages to Graylog",
   "author": "Tomas Varaneckas <tomas.varaneckas@gmail.com>",
   "license": "MIT",
 
