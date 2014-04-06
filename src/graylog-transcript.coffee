@@ -29,6 +29,9 @@ module.exports = (robot) ->
     facility: facility
     bufferSize: chunkSize
 
+  logger.on 'error', (error) ->
+    robot.logger.error "Error logging to graylog: #{error}"
+
   robot.hear //, (msg) ->
     room = msg.message.room
     return unless room # Don't log private conversations
